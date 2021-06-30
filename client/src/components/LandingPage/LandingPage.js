@@ -12,7 +12,7 @@ function LandingPage(props) {
     const [CurrentPage, setCurrentPage] = useState(0);
 
     useEffect(() => {
-        const endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=ko&page=1 `;
+        const endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=ko&page=1`;
 
         fetchMovies(endpoint);
     }, [])
@@ -30,12 +30,13 @@ function LandingPage(props) {
                 setCurrentPage(response.page)
 
             })
-    }
+    };
+
     const loadMoreItems = () => {
         const endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=ko&page=${CurrentPage + 1}`;
 
         fetchMovies(endpoint);
-    }
+    };
 
 
     return (
@@ -65,9 +66,7 @@ function LandingPage(props) {
                             />
                         </React.Fragment>
                     ))}
-
                 </Row>
-
 
             </div>
 
