@@ -4,9 +4,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import LandingPage from './components/views/LandingPage/LandingPage';
-import LoginPage from './components/views/LoginPage/LoginPage';
-import RegisterPage from './components/views/RegisterPage/RegisterPage';
+import LandingPage from './components/LandingPage/LandingPage';
+import LoginPage from './components/LoginPage/LoginPage';
+import RegisterPage from './components/RegisterPage/RegisterPage';
 import Auth from './hoc/auth';
 
 
