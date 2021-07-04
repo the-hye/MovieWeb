@@ -1,3 +1,5 @@
+// eslint-disable-next-line
+
 import {
     LOGIN_USER,
     REGISTER_USER,

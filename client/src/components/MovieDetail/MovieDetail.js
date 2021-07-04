@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import MainImage from '../LandingPage/Sections/MainImage';
 import MovieInfo from './Section/MovieInfo';
 import GridCards from '../commons/GridCards';
+import Favorite from './Section/Favorite';
 import { Row } from 'antd';
 
 function MovieDetail(props) {
@@ -50,6 +51,9 @@ function MovieDetail(props) {
 
             {/* Body */}
             <div style={{ width: '85%', margin: '1rem auto' }}>
+                <div style={{display:'flex', justifyContent:'flex-end'}}>
+                    <Favorite movieInfo={Movie} movieId={movieId} userFrom={localStorage.getItem('userId')}/>
+                </div>
 
                 {/* Movie Info */}
                 <MovieInfo
